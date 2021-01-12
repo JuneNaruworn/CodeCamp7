@@ -1,3 +1,0 @@
-# june naruworn
-v
-v
