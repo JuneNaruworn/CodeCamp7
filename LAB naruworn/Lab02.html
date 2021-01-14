@@ -1,0 +1,131 @@
+<html>
+<head>
+    <h1> Lab 02 naruwornv@gmail.com </h1> <br> <br>
+    
+    <style>
+        #lab1{
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #lab1 th{
+            background-color: blue;
+            border: 1px solid black;
+            font-size: 15px;
+            color: white;
+            text-align: center;
+        }
+        #lab1 td{
+            font-size: 15px;
+            border: 1px solid black;
+        }
+        
+        .tooltip span{
+            visibility: hidden;
+            color: white;
+            background-color: green;
+            border-radius: 2px;
+            position: absolute;
+            z-index: 1;
+        }
+        .tooltip:hover span{
+            visibility: visible;
+        }
+       
+        .pagination {
+            display: inline-block;
+        }
+        .pagination a {
+            color: black;
+            padding: 4px 8px;
+            transition: background-color .3s;
+        }
+        .pagination a:hover:not(.active) {background-color: #ddd;}
+       
+        ul{
+            list-style-type: none;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            color: blue;
+            padding: 5px
+        }
+        
+        .dropdown-content{
+            display: none;
+            background-color: green;
+            color: white;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+       
+        <h1>Lab1: ให้หาว่าแต่ละอันคืออะไร และ ให้สร้างไฟล์ HTML ในการแสดงตัวอย่างของแต่ละอัน ส่งทาง git</h1>
+    </center>
+    <table id="lab1">
+        <thead>
+            <th>คำสั่ง</th>
+            <th>ตัวอย่าง</th>
+            <th>คำอธิบาย</th>
+        </thead>
+        
+        <tr>
+            <td>1. Tooltips</td>
+            <td>
+                <div class="tooltip">This is text to show Tooltips
+                    <span>Tooltips text</span>
+                </div>
+            </td>
+            <td>ทำหน้าที่ขึ้นข้อความเมื่อเมาส์ไปชี้ที่ตำแหน่งนั้นๆ</td>
+        </tr>
+        
+        <tr>
+            <td>2. Pagination</td>
+            <td>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+            </td>
+            <td>ทำหน้าที่ในการตัวกำหนดเลขหน้าในแต่ละ page</td>
+        </tr>
+        
+        <tr>
+            <td>3. Navigatior bar</td>
+            <td>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                  </ul>
+            </td>
+            <td>เป็นการสร้างแถบนำทางให้มีสีสันมากขึ้นโดยดัดแปลงมาจาก HTML code</td>
+        </tr>
+        
+        <tr>
+            <td>4. Dropdown</td>
+            <td>
+                <div class="dropdown">
+                    <span>Point me!!</span>
+                    <div class="dropdown-content"><p>Dropdown word</p></div>
+                  </div>
+            </td>
+            <td>สร้างกล่องดรอปดาวน์ที่ปรากฏขึ้นเมื่อผู้ใช้เลื่อนเมาส์ไปที่องค์ประกอบ</td>
+        </tr>
+    </table>
+
+</body>
+</html>
