@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2> Booking </h2>
+
+<form action="/action_page.php">
+    <label for="Fly">Flying from:</label>
+  <select name="Fly" id="Fly">
+    <option value="1">สนามบินดอนเมื่อง</option>
+    <option value="2">เชียงใหม่</option>
+    <option value="3">สนามบินสุวรรณภูมิ</option>
+    <option value="4">ภูเก็ต</option>
+  </select>
+  <label for="Fly">To:</label>
+  <select name="To" id="To">
+    <option value="1">สนามบินดอนเมื่อง</option>
+    <option value="2">เชียงใหม่</option>
+    <option value="3">สนามบินสุวรรณภูมิ</option>
+    <option value="4">ภูเก็ต</option>
+  </select><br><br>
+  <label for="Adult">Adult:</label>
+  <input  type="number" id="Adult" name="Adult" min="0" style="width:20px;" >
+  <label for="Child">Child:</label>
+  <input type="number" id="Child" name="Child" min="0" style="width:20px;">
+  <label for="Infant">Infant:</label>
+  <input type="number"  id="Infant"  name="Infant" min="0" style="width:20px;" >
+</select>
+<label style="color: rgb(236, 12, 31);" for="Currency">Currency: </label>
+  <select name="Currency" id="Currency">
+    <option value="1">THB</option>
+    <option value="2">DOS</option>
+    <option value="3">US</option>
+    <option value="4">JBY</option>
+  </select>
+  <br><br>
+    <label for="Departing">Departing:</label>
+    <input type="datetime-local" id="Departing" name="Departing">
+    <label for="Returning">Returning:</label>
+    <input type="datetime-local" id="Returning" name="Returning">
+    <br><br><br><input  style="background-color: orangered;" type="submit" value="Submit">
+  </form>
+
+<p>----------------</p>
+
+</body>
+</html>
