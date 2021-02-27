@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.9.แบบฝึกหัก</title>
+</head>
+<body>
+    <h1>1.คำสั่งต่อไปนี้แสดงค่าเป็นอะไร</h1>
+
+
+    <script>
+        alert( null || 2 || undefined );                // alert(2)
+        alert( alert(1) || 2 || alert(3) );             // ทำ alert(1) และจบที่ alert(2)
+        alert( 1 && null && 2 );                        // alert(null) 
+        alert( alert(1) && alert(2) );                  // ทำ alert(1) และจบที่ undefined
+        alert( null || 2 && 3 || 4 );                   // alert(3)
+    </script>
+</body>
+</html>
