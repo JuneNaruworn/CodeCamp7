@@ -1,0 +1,1 @@
+let obj2 = new obj.constructor(); // อ้างอิงถึง prototype เดียวกัน
